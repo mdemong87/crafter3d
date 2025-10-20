@@ -15,11 +15,12 @@
 
 
     <!-- css file link here -->
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/footer.module.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/footer.module.css">
+    <link rel="stylesheet" href="../css/header.module.css">
     <link rel="stylesheet" href="./css/landingpage/sidecart.module.css">
-    <link rel="stylesheet" href='./css/productdetailes/productdetailes.module.css'>
-    <link rel="stylesheet" href="./css/header.module.css">
+    <link rel="stylesheet" href="./css/termsandcondition/termsandCondition.module.css">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                 <div class="nav-wrapper">
                     <div>
                         <a href="/">
-                            <img class="logo-img" src="./assest/logo.png" alt="Logo">
+                            <img class="logo-img" src="../assest/logo.png" alt="Logo">
                         </a>
                     </div>
 
@@ -227,7 +228,7 @@
 
                             </div>
                             <div class="smallscreen_cartIconsWrper">
-                                <img src="./assest/cart.png" alt="cart-icon">
+                                <img src="../assest/cart.png" alt="cart-icon">
                                 <div class="smallscreen_cartNumber">
                                     0
                                 </div>
@@ -259,7 +260,7 @@
 
                         </div>
                         <div class="cartIconsWrper">
-                            <img src="./assest/cart.png" alt="cart-icon">
+                            <img src="../assest/cart.png" alt="cart-icon">
                             <div class="cartNumber">
                                 0
                             </div>
@@ -288,358 +289,233 @@
 
 
 
-    <!-- Product Details -->
-    <section class="product-detailsPage_product-details">
+
+
+
+
+
+
+
+
+
+    <div class="site-header">
         <div class="container">
-            <div class="product-details-grid">
-                <!-- Product Gallery -->
-                <div class="product-gallery">
-                    <div class="gallery-main">
-                        <div class="gallery_main_zoom">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-                        </div>
-                        <img id="mainImage"
-                            src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816626/Pieza_1_iyirod.png"
-                            alt="X1 Carbon 3D Printer">
-                    </div>
-                    <div class="gallery-thumbs">
-                        <div class="thumb active"
-                            data-image="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816626/Pieza_1_iyirod.png">
-                            <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816626/Pieza_1_iyirod.png"
-                                alt="X1 Carbon Front">
-                        </div>
-                        <div class="thumb"
-                            data-image="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816625/Filamentos_bhrktn.png">
-                            <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816625/Filamentos_bhrktn.png"
-                                alt="X1 Carbon Side">
-                        </div>
-                        <div class="thumb"
-                            data-image="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816624/Montura_1_mxd3i5.png">
-                            <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816624/Montura_1_mxd3i5.png"
-                                alt="X1 Carbon Printing">
-                        </div>
-                        <div class="thumb"
-                            data-image="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816618/M%C3%A1quina_2_rwjyh8.png">
-                            <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816618/M%C3%A1quina_2_rwjyh8.png"
-                                alt="X1 Carbon Details">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Info -->
-                <div class="product-info">
-                    <div class="product-badge">Flagship</div>
-                    <h1 class="product-title">X1 Carbon</h1>
-                    <div class="product-rating">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <span class="rating-value">4.7</span>
-                        <span class="review-count">(128 Reviews)</span>
-                    </div>
-                    <p class="product-description">
-                        The ultimate 3D printer with AI monitoring, hardened steel extruder, and active noise
-                        cancellation.
-                        Experience unparalleled speed, precision, and reliability with our flagship model.
-                    </p>
-
-                    <div class="product-price">
-                        <span class="current-price">$1,499.00</span>
-                        <span class="original-price">$1,699.00</span>
-                        <span class="discount">Save $200</span>
-                    </div>
-
-                    <div class="product-features">
-                        <div class="feature">
-                            <i class="fas fa-bolt"></i>
-                            <span>500mm/s Printing Speed</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-microchip"></i>
-                            <span>AI-Powered Failure Detection</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-fan"></i>
-                            <span>Fully Enclosed Chamber</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-volume-mute"></i>
-                            <span>Active Noise Cancellation</span>
-                        </div>
-                    </div>
-
-                    <div class="product-options">
-                        <div class="option-group">
-                            <label>AMS System:</label>
-                            <div class="checkbox-option">
-                                <input type="checkbox" id="amsSystem">
-                                <label for="amsSystem">Add AMS Multi-Color System (+$349.00)</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-actions">
-                        <div class="quantity-selector">
-                            <button class="qty-btn" id="decreaseQty">-</button>
-                            <input type="number" id="quantity" value="1" min="1" max="10">
-                            <button class="qty-btn" id="increaseQty">+</button>
-                        </div>
-                        <button class="btn btn-primary add-to-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            Add to Cart
-                        </button>
-                        <button class="btn btn-outline wishlist-btn">
-                            <i class="far fa-heart"></i>
-                        </button>
-                    </div>
-
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <i class="fas fa-shipping-fast"></i>
-                            <span>Free Shipping Worldwide</span>
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-undo"></i>
-                            <span>30-Day Money Back Guarantee</span>
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>2-Year Warranty</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h1 class="page-title">Privacy Policy</h1>
+            <p class="page-subtitle">How we collect, use, share, and protect your information.</p>
         </div>
-    </section>
+    </div>
 
-
-
-    <!-- Product Tabs -->
-    <section class="product-tabs">
-        <div class="container">
-            <div class="tabs-header">
-                <button class="tab-btn active" data-tab="description">Description</button>
-                <button class="tab-btn" data-tab="specifications">Specifications</button>
-                <button class="tab-btn" data-tab="reviews">Reviews</button>
-                <button class="tab-btn" data-tab="support">Support</button>
+    <main class="container layout">
+        <!-- Table of Contents -->
+        <nav class="toc" aria-label="Table of contents">
+            <div class="toc-card">
+                <h2>On this page</h2>
+                <ol>
+                    <li><a href="#intro">Overview</a></li>
+                    <li><a href="#personal-info">Personal Information We Collect</a></li>
+                    <li><a href="#use">How We Use Your Personal Information</a></li>
+                    <li><a href="#sharing">Sharing Your Personal Information</a></li>
+                    <li><a href="#ads">Behavioral Advertising</a></li>
+                    <li><a href="#dnt">Do Not Track</a></li>
+                    <li><a href="#rights">Your Rights</a></li>
+                    <li><a href="#retention">Data Retention</a></li>
+                    <li><a href="#changes">Changes</a></li>
+                    <li><a href="#minors">Minors</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ol>
             </div>
+        </nav>
 
-            <div class="tabs-content">
-                <div class="tab-panel active" id="description">
-                    <h3>Revolutionary 3D Printing Experience</h3>
-                    <p>The X1 Carbon represents the pinnacle of 3D printing technology, combining speed, precision, and
-                        intelligence in one complete package.</p>
+        <!-- Content -->
+        <div class="content">
+            <section id="intro" class="card">
+                <h2>Overview</h2>
+                <p>
+                    This Privacy Policy outlines how your personal information is collected, used, and shared
+                    when you visit or make a purchase from <strong>Crafter3D.com</strong> (the “Site”).
+                </p>
+            </section>
 
-                    <div class="feature-grid">
-                        <div class="feature-item">
-                            <i class="fas fa-brain"></i>
-                            <h4>AI-Powered Monitoring</h4>
-                            <p>Our proprietary AI system detects print failures in real-time and automatically adjusts
-                                parameters for perfect results.</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-tachometer-alt"></i>
-                            <h4>Unmatched Speed</h4>
-                            <p>Print at speeds up to 500mm/s with CoreXY motion system and direct drive extruder for
-                                rapid production.</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-thermometer-half"></i>
-                            <h4>Advanced Chamber Control</h4>
-                            <p>Fully enclosed chamber with active heating and filtration for printing advanced materials
-                                like ABS, Nylon, and PC.</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-palette"></i>
-                            <h4>Multi-Material Ready</h4>
-                            <p>Compatible with the AMS (Automatic Material System) for printing with up to 4 colors or
-                                materials simultaneously.</p>
-                        </div>
-                    </div>
-                </div>
+            <section id="personal-info" class="card">
+                <h2>Personal Information We Collect</h2>
+                <p>
+                    When you visit the Site, we automatically collect certain information about your device,
+                    including information about your web browser, IP address, time zone, and some of the
+                    cookies installed on your device. Additionally, as you browse the Site, we collect
+                    information about the individual web pages or products you view, the websites or search
+                    terms that referred you to the Site, and how you interact with the Site. We refer to this
+                    automatically-collected information as “Device Information”.
+                </p>
+                <p>We collect Device Information using the following technologies:</p>
+                <ul>
+                    <li>
+                        <strong>Cookies</strong> are data files placed on your device or computer and often
+                        include an anonymous unique identifier. For more information about cookies and how to
+                        disable them, visit <a href="http://www.allaboutcookies.org" target="_blank"
+                            rel="noopener noreferrer">allaboutcookies.org</a>.
+                    </li>
+                    <li>
+                        <strong>Log files</strong> track actions occurring on the Site and collect data including
+                        your IP address, browser type, Internet service provider, referring/exit pages, and date/time
+                        stamps.
+                    </li>
+                    <li>
+                        <strong>Web beacons</strong>, <strong>tags</strong>, and <strong>pixels</strong> are
+                        electronic files used to record information about how you browse the Site.
+                    </li>
+                </ul>
+                <p>
+                    Additionally, when you make a purchase or attempt to make a purchase through the Site, we
+                    collect certain information from you, including your name, billing address, shipping
+                    address, payment information (including credit card numbers or other payment information),
+                    email address, and phone number. We refer to this information as “Order Information”.
+                </p>
+                <p>
+                    When we refer to “Personal Information” in this Privacy Policy, we mean both Device
+                    Information and Order Information.
+                </p>
+            </section>
 
-                <div class="tab-panel" id="specifications">
-                    <h3>Technical Specifications</h3>
-                    <div class="specs-table">
-                        <div class="spec-row">
-                            <div class="spec-name">Build Volume</div>
-                            <div class="spec-value">256 × 256 × 256 mm</div>
-                        </div>
-                        <div class="spec-row">
-                            <div class="spec-name">Max Print Speed</div>
-                            <div class="spec-value">500 mm/s</div>
-                        </div>
-                        <div class="spec-row">
-                            <div class="spec-name">Max Travel Speed</div>
-                            <div class="spec-value">600 mm/s</div>
-                        </div>
-                        <div class="spec-row">
-                            <div class="spec-name">Noise Level</div>
-                            <div class="spec-value">≤ 50 dB</div>
-                        </div>
-                        <div class="spec-row">
-                            <div class="spec-name">Supported Materials</div>
-                            <div class="spec-value">PLA, PETG, ABS, ASA, PA, PC, TPU</div>
-                        </div>
-                        <div class="spec-row">
-                            <div class="spec-name">Nozzle Temperature</div>
-                            <div class="spec-value">Max 300°C</div>
-                        </div>
-                        <div class="spec-row">
-                            <div class="spec-name">Bed Temperature</div>
-                            <div class="spec-value">Max 120°C</div>
-                        </div>
-                        <div class="spec-row">
-                            <div class="spec-name">Connectivity</div>
-                            <div class="spec-value">Wi-Fi, Ethernet, USB</div>
-                        </div>
-                        <div class="spec-row">
-                            <div class="spec-name">Dimensions</div>
-                            <div class="spec-value">389 × 389 × 457 mm</div>
-                        </div>
-                        <div class="spec-row">
-                            <div class="spec-name">Weight</div>
-                            <div class="spec-value">18.5 kg</div>
-                        </div>
-                    </div>
-                </div>
+            <section id="use" class="card">
+                <h2>How Do We Use Your Personal Information?</h2>
+                <p>
+                    We use the Order Information we collect generally to fulfill any orders placed through the
+                    Site (including processing your payment information, arranging for shipping, and providing
+                    you with invoices and/or order confirmations). Additionally, we use this Order Information to:
+                </p>
+                <ul>
+                    <li>Communicate with you;</li>
+                    <li>Screen our orders for potential risk or fraud; and</li>
+                    <li>
+                        When in line with the preferences you have shared with us, provide you with information
+                        or advertising relating to our products or services.
+                    </li>
+                </ul>
+                <p>
+                    We use the Device Information that we collect to help us screen for potential risk and
+                    fraud (in particular, your IP address), and more generally to improve and optimize our
+                    Site (for example, by generating analytics about how our customers browse and interact
+                    with the Site, and to assess the success of our marketing and advertising campaigns).
+                </p>
+            </section>
 
-                <div class="tab-panel" id="reviews">
-                    <h3>Customer Reviews</h3>
-                    <div class="reviews-summary">
-                        <div class="overall-rating">
-                            <div class="rating-score">4.7</div>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="rating-count">Based on 128 reviews</div>
-                        </div>
-                        <div class="rating-bars">
-                            <div class="rating-bar">
-                                <span>5 Stars</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 75%;"></div>
-                                </div>
-                                <span>75%</span>
-                            </div>
-                            <div class="rating-bar">
-                                <span>4 Stars</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 15%;"></div>
-                                </div>
-                                <span>15%</span>
-                            </div>
-                            <div class="rating-bar">
-                                <span>3 Stars</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 7%;"></div>
-                                </div>
-                                <span>7%</span>
-                            </div>
-                            <div class="rating-bar">
-                                <span>2 Stars</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 2%;"></div>
-                                </div>
-                                <span>2%</span>
-                            </div>
-                            <div class="rating-bar">
-                                <span>1 Star</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 1%;"></div>
-                                </div>
-                                <span>1%</span>
-                            </div>
-                        </div>
-                    </div>
+            <section id="sharing" class="card">
+                <h2>Sharing Your Personal Information</h2>
+                <p>
+                    We share your Personal Information with third parties to help us use your Personal
+                    Information as described above. We also use Google Analytics to help us understand how our
+                    customers use the Site; you can read more about how Google uses your Personal Information
+                    here:
+                    <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank"
+                        rel="noopener noreferrer">
+                        https://www.google.com/intl/en/policies/privacy/
+                    </a>.
+                    You can opt out of Google Analytics here:
+                    <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">
+                        https://tools.google.com/dlpage/gaoptout
+                    </a>.
+                </p>
+                <p>
+                    Finally, we may also share your Personal Information to comply with applicable laws and
+                    regulations, to respond to a subpoena, search warrant, or other lawful request for
+                    information we receive, or to otherwise protect our rights.
+                </p>
+            </section>
 
-                    <div class="review-list">
-                        <div class="review-item">
-                            <div class="review-header">
-                                <div class="reviewer">Michael T.</div>
-                                <div class="review-date">March 15, 2023</div>
-                                <div class="review-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                            <div class="review-title">Game Changer for My Business</div>
-                            <div class="review-content">
-                                <p>The X1 Carbon has completely transformed my prototyping workflow. The speed and
-                                    reliability are unmatched. The AI detection has saved me countless hours of failed
-                                    prints.</p>
-                            </div>
-                        </div>
+            <section id="ads" class="card">
+                <h2>Behavioral Advertising</h2>
+                <p>
+                    As described above, we use your Personal Information to provide you with targeted
+                    advertisements or marketing communications we believe may be of interest to you. For more
+                    information about how targeted advertising works, you can visit the Network Advertising
+                    Initiative’s (“NAI”) educational page at
+                    <a href="http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work"
+                        target="_blank" rel="noopener noreferrer">
+                        http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work
+                    </a>.
+                </p>
+                <p>You can opt out of targeted advertising by using the links below:</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/settings/?tab=ads" target="_blank"
+                            rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://www.google.com/settings/ads/anonymous" target="_blank"
+                            rel="noopener noreferrer">Google</a></li>
+                    <li><a href="https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads"
+                            target="_blank" rel="noopener noreferrer">Bing</a></li>
+                </ul>
+                <p>
+                    Additionally, you can opt out of some of these services by visiting the Digital
+                    Advertising Alliance’s opt-out portal at:
+                    <a href="http://optout.aboutads.info/" target="_blank"
+                        rel="noopener noreferrer">http://optout.aboutads.info/</a>.
+                </p>
+            </section>
 
-                        <div class="review-item">
-                            <div class="review-header">
-                                <div class="reviewer">Sarah J.</div>
-                                <div class="review-date">February 28, 2023</div>
-                                <div class="review-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                            <div class="review-title">Impressive Out of the Box</div>
-                            <div class="review-content">
-                                <p>I was printing within 30 minutes of unboxing. The setup was incredibly
-                                    straightforward. The print quality is exceptional, especially with the multi-color
-                                    AMS system.</p>
-                            </div>
-                        </div>
-                    </div>
+            <section id="dnt" class="card">
+                <h2>Do Not Track</h2>
+                <p>
+                    Please note that we do not alter our Site’s data collection and use practices when we see
+                    a Do Not Track signal from your browser.
+                </p>
+            </section>
 
-                    <button class="btn btn-outline load-more-reviews">
-                        Load More Reviews
-                    </button>
-                </div>
+            <section id="rights" class="card">
+                <h2>Your Rights</h2>
+                <p>
+                    If you are a European resident, you have the right to access personal information we hold
+                    about you and to ask that your personal information be corrected, updated, or deleted. If
+                    you would like to exercise this right, please contact us through the contact information
+                    below.
+                </p>
+                <p>
+                    Additionally, if you are a European resident, we note that we are processing your
+                    information to fulfill contracts we might have with you (for example, if you make an order
+                    through the Site), or otherwise to pursue our legitimate business interests listed above.
+                    Additionally, please note that your information will be transferred outside of Europe,
+                    including to Canada and the United States.
+                </p>
+            </section>
 
-                <div class="tab-panel" id="support">
-                    <h3>Product Support</h3>
-                    <div class="support-options">
-                        <div class="support-option">
-                            <i class="fas fa-book"></i>
-                            <h4>User Manual</h4>
-                            <p>Download the complete user manual for setup and operation instructions.</p>
-                            <a href="#" class="support-link">Download PDF</a>
-                        </div>
-                        <div class="support-option">
-                            <i class="fas fa-video"></i>
-                            <h4>Video Tutorials</h4>
-                            <p>Watch step-by-step tutorials for setup, maintenance, and advanced features.</p>
-                            <a href="#" class="support-link">Watch Videos</a>
-                        </div>
-                        <div class="support-option">
-                            <i class="fas fa-tools"></i>
-                            <h4>Troubleshooting</h4>
-                            <p>Find solutions to common issues and maintenance procedures.</p>
-                            <a href="#" class="support-link">View Guide</a>
-                        </div>
-                        <div class="support-option">
-                            <i class="fas fa-headset"></i>
-                            <h4>Contact Support</h4>
-                            <p>Get help from our technical support team via email, chat, or phone.</p>
-                            <a href="#" class="support-link">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <section id="retention" class="card">
+                <h2>Data Retention</h2>
+                <p>
+                    When you place an order through the Site, we will maintain your Order Information for our
+                    records unless and until you ask us to delete this information.
+                </p>
+            </section>
+
+            <section id="changes" class="card">
+                <h2>Changes</h2>
+                <p>
+                    We may update this privacy policy from time to time in order to reflect, for example,
+                    changes to our practices or for other operational, legal, or regulatory reasons.
+                </p>
+            </section>
+
+            <section id="minors" class="card">
+                <h2>Minors</h2>
+                <p>
+                    The Site is not intended for individuals under the age of <strong>7 years old</strong>
+                    without parental consent.
+                </p>
+            </section>
+
+            <section id="contact" class="card">
+                <h2>Contact Us</h2>
+                <p>
+                    For more information about our privacy practices, if you have questions, or if you would
+                    like to make a complaint, please contact us by e-mail at
+                    <a href="mailto:crafter3droot@gmail.com">crafter3droot@gmail.com</a> or using the Contact
+                    form available on our website.
+                </p>
+            </section>
+
         </div>
-    </section>
+
+
+    </main>
+
+
 
 
 
@@ -649,7 +525,8 @@
         <div class="container">
             <!-- Newsletter Section -->
             <div class="newsletter-section">
-                <h3>Be the first to receive our latest product updates, newest offerings, and free product trials.</h3>
+                <h3>Be the first to receive our latest product updates, newest offerings, and free product
+                    trials.</h3>
                 <div class="newsletter-formWrper">
                     <div class="newsletter-form">
                         <input type="email" placeholder="Enter your email address">
@@ -663,7 +540,8 @@
                 <div class="footer-column">
                     <h4>Crafter3D</h4>
                     <p>
-                        Crafter3D es una comunidad dedicada a crear productos innovadores que apoyan y promueven el
+                        Crafter3D es una comunidad dedicada a crear productos innovadores que apoyan y promueven
+                        el
                         desarrollo de la impresión 3D.
                     </p>
 
@@ -709,7 +587,7 @@
                     <div class="paymentDivWrper">
                         <div class="f-pay-card">
                             <div class="f-powered">
-                                <img class="stripe-logo" src="./assest/footerPayment.png" alt="Stripe">
+                                <img class="stripe-logo" src="../assest/footerpayment.png" alt="Stripe">
                             </div>
                         </div>
                     </div>
@@ -738,6 +616,8 @@
 
     </footer>
     <!-- footer section end from here -->
+
+
 
 
 
@@ -803,54 +683,6 @@
         </div>
     </div>
     <!-- login pop up code end from here -->
-
-
-
-
-
-
-
-    <!-- product bigger image slider code start from here -->
-    <div class="product_bigger_popUp">
-        <div class="product_bigger_popUp_container">
-            <div class="product_bigger_popUp_Controller_wrper">
-                <div class="product_bigger_popUp_Counter">
-                    <span class="popupCurrentLength">1</span>
-                    <span>/</span>
-                    <span class="popUpLength">4</span>
-                </div>
-                <div class="product_bigger_popUp_cross">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-            </div>
-
-            <button class="product_bigger_popUp_PrevBtn">
-                <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <button class="product_bigger_popUp_nextBtn">
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
-
-            <div class="product_bigger_popUp_body_wraper">
-
-                <img class="pop_up_image"
-                    src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816626/Pieza_1_iyirod.png"
-                    alt="X1 Carbon 3D Printer">
-
-            </div>
-        </div>
-    </div>
-    <!-- product bigger image slider code end from here -->
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -968,8 +800,10 @@
                 <div class="sc-footer">
                     <div class="sc-summary">
                         <div class="sc-line"><span>Subtotal</span><strong data-sc-subtotal>$83.00</strong></div>
-                        <div class="sc-line sc-muted"><span>Shipping</span><span>Calculated at checkout</span></div>
-                        <div class="sc-line sc-total"><span>Total</span><strong data-sc-total>$83.00</strong></div>
+                        <div class="sc-line sc-muted"><span>Shipping</span><span>Calculated at checkout</span>
+                        </div>
+                        <div class="sc-line sc-total"><span>Total</span><strong data-sc-total>$83.00</strong>
+                        </div>
                     </div>
 
                     <div class="sc-actions">
@@ -997,10 +831,10 @@
 
 
 
-    <script src="./js/navber.js"></script>
-    <script src="./js/productdetailes/productdetailes.js"></script>
+
+    <script src="../js/navber.js"></script>
     <script src="./js/sidecart.js"></script>
-    <script src="./js/bottomtoTop.js"></script>
+    <script src="../js/bottomtoTop.js"></script>
 
 </body>
 
