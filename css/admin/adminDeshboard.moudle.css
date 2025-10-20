@@ -26,12 +26,24 @@
     box-sizing: border-box;
 }
 
+
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/assest/font/Nunito/Nunito-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 100 900;
+    /* variable weight range */
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f7fb;
     color: var(--dark);
     line-height: 1.6;
     overflow-x: hidden;
+    font-family: "Nunito", sans-serif !important;
     /* Prevent horizontal scroll */
 }
 
@@ -208,11 +220,11 @@ body {
     transition: var(--transition);
 }
 
-.search-box input:focus {
+/* .search-box input:focus {
     outline: none;
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(23, 164, 74, 0.2);
-}
+} */
 
 .user-menu {
     display: flex;
@@ -455,20 +467,20 @@ input,
 select,
 textarea {
     padding: 12px 15px;
-    border: 1px solid var(--gray-light);
     border-radius: var(--border-radius-sm);
     font-size: 1rem;
     transition: var(--transition);
     font-family: inherit;
+    border: 1px solid var(--gray-light);
 }
 
-input:focus,
+/* input:focus,
 select:focus,
 textarea:focus {
     outline: none;
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(23, 164, 74, 0.2);
-}
+} */
 
 textarea {
     resize: vertical;
@@ -490,7 +502,7 @@ textarea {
     padding: 12px;
     background-color: var(--primary-extra-light);
     border-radius: var(--border-radius-sm);
-    border: 1px solid var(--primary-light);
+
     transition: var(--transition);
 }
 
@@ -759,6 +771,10 @@ textarea {
         padding-top: 80px;
         /* Space for fixed header */
     }
+
+    .btn-remove {
+        width: fit-content !important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -806,9 +822,11 @@ textarea {
     .part-item {
         padding: 8px;
         gap: 6px;
-        flex-direction: column;
-        align-items: stretch;
+        /* flex-direction: column; */
+
     }
+
+
 
     .part-input,
     .qty-input {
@@ -963,7 +981,7 @@ body.sidebar-open {
 }
 
 /* Focus states with primary color */
-input:focus,
+/* input:focus,
 select:focus,
 textarea:focus {
     border-color: var(--primary);
@@ -973,4 +991,4 @@ textarea:focus {
 .search-box input:focus {
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(23, 164, 74, 0.2);
-}
+} */

@@ -9,6 +9,7 @@
     position: fixed !important;
     top: 90%;
     right: 80px;
+    z-index: 999999999 !important;
 }
 
 .bottomToTopBtn {
@@ -23,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .bottomToTopBtn:hover .fa-arrow-up {
@@ -69,7 +71,7 @@
 .f-powered .stripe-logo {
     height: auto;
     width: 240px !important;
-    z-index: 9;
+    z-index: 10;
 }
 
 .newsletter-formWrper {

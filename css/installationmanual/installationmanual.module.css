@@ -22,10 +22,22 @@
     box-sizing: border-box
 }
 
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/assest/font/Nunito/Nunito-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 100 900;
+    /* variable weight range */
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 body {
     background: var(--bg);
     color: var(--text);
-    font-family: ui-sans-serif, system-ui, Segoe UI, Roboto, Arial
+    font-family: "Nunito", sans-serif !important;
 }
 
 
@@ -43,7 +55,8 @@ body {
     gap: 20px;
     background: var(--panel);
     border: 1px solid var(--line);
-    border-radius: var(--radius-xl);
+    border-top-left-radius: var(--radius-xl);
+    border-top-right-radius: var(--radius-xl);
     padding: 18px;
     box-shadow: var(--shadow);
 
@@ -56,6 +69,7 @@ body {
     width: 100%;
     display: grid;
     place-items: center;
+    justify-content: center;
 }
 
 .bom-summary__media img {
@@ -66,6 +80,68 @@ body {
     background: var(--panel-soft);
     border: 1px solid var(--line);
 }
+
+
+
+.bom_Action_wrper {
+    height: 60px;
+    border: 1px solid var(--line);
+    padding: 18px;
+    background: var(--panel);
+    border-bottom-left-radius: var(--radius-xl);
+    border-bottom-right-radius: var(--radius-xl);
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bom_Action_wrper>button {
+    background: var(--brand);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.bom_Action_wrper>button:first-child {
+    background: var(--commercial);
+    transition: .3s ease-in-out;
+
+}
+
+
+.bom_Action_wrper>button:nth-child(2) {
+    background: var(--branColor);
+    transition: .3s ease-in-out;
+}
+
+.bom_Action_wrper>button:last-child {
+    background: var(--printed);
+    transition: .3s ease-in-out;
+}
+
+.bom_Action_wrper>button:first-child:hover {
+    background: #127251;
+    transform: translateY(-1px);
+    transition: .3s ease-in-out;
+
+}
+
+.bom_Action_wrper>button:nth-child(2):hover {
+    background: #335083;
+    transform: translateY(-1px);
+    transition: .3s ease-in-out;
+}
+
+.bom_Action_wrper>button:last-child:hover {
+    background: #b22d2d;
+    transform: translateY(-1px);
+    transition: .3s ease-in-out;
+}
+
 
 /* Header */
 .bom-summary__header {
@@ -92,7 +168,7 @@ body {
 /* Grid of stats */
 .bom-summary__grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(160px, 1fr));
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
     gap: 14px 18px;
     align-items: start;
     position: relative;
@@ -101,7 +177,7 @@ body {
 /* vertical divider between halves (on lg) */
 @media (min-width:900px) {
     .bom-summary__grid {
-        grid-template-columns: repeat(4, minmax(160px, 1fr));
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
     }
 
     .bom-summary__grid .divider {
@@ -111,6 +187,7 @@ body {
         margin: 4px 0 2px;
         display: none;
     }
+
 }
 
 /* stat item */
@@ -181,18 +258,31 @@ body {
 
 
 
-
-
 /* Responsive */
-@media (max-width:860px) {
+@media (max-width:890px) {
+
+
+    .bom_Action_wrper {
+
+        justify-content: center;
+
+    }
+
     .bom-summary {
-        grid-template-columns: 110px 1fr;
+        grid-template-columns: 1fr;
         padding: 14px;
     }
 
     .bom-summary__grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
+
+
+
+    .bom-summary__media>img {
+        width: 300px;
+    }
+
 
     .stat--back {
         grid-column: 2 / 3;

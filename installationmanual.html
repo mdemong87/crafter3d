@@ -412,6 +412,11 @@
                 </div>
 
             </div>
+            <div class="bom_Action_wrper">
+                <button>Edit</button>
+                <button>Comprar Impresora</button>
+                <button>Ver Ensamblajes</button>
+            </div>
         </div>
     </section>
 
@@ -427,8 +432,23 @@
 
         <!-- 3D Printed Parts -->
         <div class="bom-head bom-head--printed">
-            <div class="bom-head__icon">🧊</div>
-            <h3 class="bom-head__title">Lista de partes impresas en 3D</h3>
+            <div class="headandiconWrper">
+                <div class="bom-head__icon">🧊</div>
+                <h3 class="bom-head__title">Lista de partes impresas en 3D</h3>
+            </div>
+
+            <div class="bom-head__actions_werper">
+                <input type="search" placeholder="search">
+                <div>
+                    <button>Color</button>
+                    <button>Filament</button>
+                    <button>Last Updated</button>
+                    <button>Cost</button>
+                </div>
+                <button class="addpartstbtn">
+                    Add Parts
+                </button>
+            </div>
         </div>
 
         <div class="bom-table-wrap">
@@ -451,7 +471,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="sticky">
+                        <td data-label="Número de Parte:" class="sticky">
                             <span>
                                 M6_P_0004
                             </span>
@@ -460,20 +480,20 @@
                                 <i class="fa-solid fa-download"></i>
                             </button>
                         </td>
-                        <td>Cable Chain Print Belt Bracket</td>
-                        <td class="cell-img">
+                        <td data-label="Nombre:">Cable Chain Print Belt Bracket</td>
+                        <td data-label="Imagen:" class="cell-img">
                             <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816623/Mecanismo_2_rshnba.png"
                                 alt="">
                         </td>
-                        <td>1</td>
-                        <td>Black</td>
-                        <td>30%</td>
-                        <td>0</td>
-                        <td>0.0</td>
-                        <td>PETG</td>
-                        <td>1</td>
-                        <td>2024-12-11</td>
-                        <td>
+                        <td data-label="Cantidad:"> 1</td>
+                        <td data-label="Color:"> Black</td>
+                        <td data-label="Relleno(%):"> 30%</td>
+                        <td data-label="Peso(g):"> 0</td>
+                        <td data-label="Tiempo de Impresión(h):"> 0.0</td>
+                        <td data-label="Material de Impresión:"> PETG</td>
+                        <td data-label="Versión:"> 1</td>
+                        <td data-label="Última Actualización:"> 2024-12-11</td>
+                        <td data-label="Action">
                             <div class="actionBtnWrper">
                                 <button class="addedIconWrper">
                                     <i class="fa-solid fa-plus"></i>
@@ -485,7 +505,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="sticky">
+                        <td data-label="Número de Parte:" class="sticky">
                             <span>
                                 M6_P_0039
                             </span>
@@ -494,20 +514,21 @@
                                 <i class="fa-solid fa-download"></i>
                             </button>
                         </td>
-                        <td>Print Belt Bottom Traps</td>
-                        <td class="cell-img">
+                        <td data-label="Nombre:">Print Belt Bottom Traps</td>
+                        <td data-label="Imagen:" class="cell-img">
                             <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816625/Montura_3_iypeix.png"
                                 alt="">
                         </td>
-                        <td>4</td>
-                        <td>Blue</td>
-                        <td>30%</td>
-                        <td>6.24</td>
-                        <td>0.4</td>
-                        <td>PETG</td>
-                        <td>4</td>
-                        <td>2024-12-11</td>
-                        <td class="">
+                        <td data-label="Cantidad:"> 4</td>
+                        <td data-label="Color:"> Blue</td>
+                        <td data-label="Relleno(%):"> 30%</td>
+                        <td data-label="Peso(g):"> 6.24</td>
+                        <td data-label="Tiempo de Impresión(h):"> 0.4</td>
+                        <td data-label="Material de Impresión:"> PETG</td>
+                        <td data-label="Versión:"> 4</td>
+                        <td data-label="Última Actualización:"> 2024-12-11</td>
+                        <td data-label="Action" class="">
+
                             <div class="actionBtnWrper">
                                 <button class="addedIconWrper">
                                     <i class="fa-solid fa-plus"></i>
@@ -524,8 +545,23 @@
 
         <!-- Commercial Items -->
         <header class="bom-head bom-head--commercial">
-            <div class="bom-head__icon">🛒</div>
-            <h3 class="bom-head__title">Lista de partes comerciales</h3>
+            <div class="headandiconWrper">
+                <div class="bom-head__icon">🛒</div>
+                <h3 class="bom-head__title">Lista de partes comerciales</h3>
+            </div>
+
+            <div class="bom-head__actions_werper">
+                <input type="search" placeholder="search">
+                <div>
+                    <button>Color</button>
+                    <button>Filament</button>
+                    <button>Last Updated</button>
+                    <button>Cost</button>
+                </div>
+                <button class="addpartstbtn">
+                    Add Parts
+                </button>
+            </div>
         </header>
 
         <div class="bom-table-wrap">
@@ -543,7 +579,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="sticky">
+                        <td data-label="Número de Parte:" class="sticky">
 
                             <span>
                                 C_0147
@@ -554,15 +590,15 @@
                             </button>
 
                         </td>
-                        <td>Commercial Chain</td>
-                        <td class="cell-img">
+                        <td data-label="Nombre:">Commercial Chain</td>
+                        <td data-label="Imagen:" class="cell-img">
                             <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816626/Pieza_1_iyirod.png"
                                 alt="">
                         </td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>2025-06-30</td>
-                        <td>
+                        <td data-label="Cantidad:">1</td>
+                        <td data-label="Versión:">2</td>
+                        <td data-label="Última Actualización:">2025-06-30</td>
+                        <td data-label="Action:">
                             <div class="actionBtnWrper">
                                 <button class="addedIconWrper">
                                     <i class="fa-solid fa-plus"></i>
@@ -574,7 +610,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="sticky">
+                        <td data-label="Número de Parte:" class="sticky">
                             <span>
                                 C_0041
                             </span>
@@ -585,15 +621,15 @@
 
 
                         </td>
-                        <td>Spring creality bed 25mm</td>
-                        <td class="cell-img">
+                        <td data-label="Nombre:">Spring creality bed 25mm</td>
+                        <td data-label="Imagen:" class="cell-img">
                             <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816625/Filamentos_bhrktn.png"
                                 alt="">
                         </td>
-                        <td>4</td>
-                        <td>3</td>
-                        <td>2025-06-20</td>
-                        <td>
+                        <td data-label="Cantidad:">4</td>
+                        <td data-label="Versión:">3</td>
+                        <td data-label="Última Actualización:">2025-06-20</td>
+                        <td data-label="Action">
                             <div class="actionBtnWrper">
                                 <button class="addedIconWrper">
                                     <i class="fa-solid fa-plus"></i>
@@ -630,8 +666,25 @@
 
 
             <header class="bom-head bom-head--tornillos">
-                <div class="bom-head__icon">🔨</div>
-                <h3 class="bom-head__title">Tornillos</h3>
+
+                <div class="headandiconWrper">
+                    <div class="bom-head__icon">🔨</div>
+                    <h3 class="bom-head__title">Tornillos</h3>
+                </div>
+
+
+                <div class="bom-head__actions_werper">
+                    <input type="search" placeholder="search">
+                    <div>
+                        <button>Color</button>
+                        <button>Filament</button>
+                        <button>Last Updated</button>
+                        <button>Cost</button>
+                    </div>
+                    <button class="addpartstbtn">
+                        Add Parts
+                    </button>
+                </div>
             </header>
 
 
@@ -656,7 +709,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="sticky" data-label="Número de Parte">
+                            <td class="sticky" data-label="Número de Parte:">
 
                                 <span>
                                     M3x12 Hex
@@ -666,18 +719,18 @@
                                     <i class="fa-solid fa-download"></i>
                                 </button>
                             </td>
-                            <td data-label="Nombre">M3 × 12mm DIN912 Hex</td>
-                            <td class="cell-img" data-label="Imagen">
+                            <td data-label="Nombre:">M3 × 12mm DIN912 Hex</td>
+                            <td class="cell-img" data-label="Imagen:">
                                 <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816626/Pieza_1_iyirod.png"
                                     alt="">
                             </td>
-                            <td data-label="Cantidad">8</td>
-                            <td data-label="Cabeza del Tornillo">Hex</td>
-                            <td data-label="Métrica">M3</td>
-                            <td data-label="Longitud">12&nbsp;mm</td>
-                            <td data-label="Versión">1</td>
-                            <td data-label="Última Actualización">2024-09-10</td>
-                            <td>
+                            <td data-label="Cantidad:">8</td>
+                            <td data-label="Cabeza del Tornillo:">Hex</td>
+                            <td data-label="Métrica:">M3</td>
+                            <td data-label="Longitud:">12&nbsp;mm</td>
+                            <td data-label="Versión:">1</td>
+                            <td data-label="Última Actualización:">2024-09-10</td>
+                            <td data-label="Action:">
                                 <div class="actionBtnWrper">
                                     <button class="addedIconWrper">
                                         <i class="fa-solid fa-plus"></i>
@@ -690,7 +743,7 @@
                         </tr>
 
                         <tr>
-                            <td class="sticky" data-label="Número de Parte">
+                            <td class="sticky" data-label="Número de Parte:">
 
                                 <span>
                                     M4x10 Hex
@@ -700,18 +753,18 @@
                                     <i class="fa-solid fa-download"></i>
                                 </button>
                             </td>
-                            <td data-label="Nombre">M4 × 10mm DIN912 Hex</td>
-                            <td class="cell-img" data-label="Imagen">
+                            <td data-label="Nombre:">M4 × 10mm DIN912 Hex</td>
+                            <td class="cell-img" data-label="Imagen:">
                                 <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816623/Mecanismo_2_rshnba.png"
                                     alt="">
                             </td>
-                            <td data-label="Cantidad">4</td>
-                            <td data-label="Cabeza del Tornillo">Hex</td>
-                            <td data-label="Métrica">M4</td>
-                            <td data-label="Longitud">10&nbsp;mm</td>
-                            <td data-label="Versión">1</td>
-                            <td data-label="Última Actualización">2024-12-10</td>
-                            <td>
+                            <td data-label="Cantidad:">4</td>
+                            <td data-label="Cabeza del Tornillo:">Hex</td>
+                            <td data-label="Métrica:">M4</td>
+                            <td data-label="Longitud:">10&nbsp;mm</td>
+                            <td data-label="Versión:">1</td>
+                            <td data-label="Última Actualización:">2024-12-10</td>
+                            <td data-label="Action:">
                                 <div class="actionBtnWrper">
                                     <button class="addedIconWrper">
                                         <i class="fa-solid fa-plus"></i>
@@ -724,7 +777,7 @@
                         </tr>
 
                         <tr>
-                            <td class="sticky" data-label="Número de Parte">
+                            <td class="sticky" data-label="Número de Parte:">
 
                                 <span>
                                     M3x10 Hex
@@ -734,18 +787,18 @@
                                     <i class="fa-solid fa-download"></i>
                                 </button>
                             </td>
-                            <td data-label="Nombre">M3 × 10mm DIN912 Hex</td>
-                            <td class="cell-img" data-label="Imagen">
+                            <td data-label="Nombre:">M3 × 10mm DIN912 Hex</td>
+                            <td class="cell-img" data-label="Imagen:">
                                 <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816625/Montura_3_iypeix.png"
                                     alt="">
                             </td>
-                            <td data-label="Cantidad">2</td>
-                            <td data-label="Cabeza del Tornillo">Hex</td>
-                            <td data-label="Métrica">M3</td>
-                            <td data-label="Longitud">10&nbsp;mm</td>
-                            <td data-label="Versión">1</td>
-                            <td data-label="Última Actualización">2024-09-09</td>
-                            <td>
+                            <td data-label="Cantidad:">2</td>
+                            <td data-label="Cabeza del Tornillo:">Hex</td>
+                            <td data-label="Métrica:">M3</td>
+                            <td data-label="Longitud:">10&nbsp;mm</td>
+                            <td data-label="Versión:">1</td>
+                            <td data-label="Última Actualización:">2024-09-09</td>
+                            <td data-label="Action:">
                                 <div class="actionBtnWrper">
                                     <button class="addedIconWrper">
                                         <i class="fa-solid fa-plus"></i>
@@ -782,8 +835,25 @@
         <div class="container">
             <!-- Electrical -->
             <div class="bom-head bom-head--wiring">
-                <div class="bom-head__icon">🛠️</div>
-                <h3 class="bom-head__title">Lista eléctrica</h3>
+                <div class="headandiconWrper">
+                    <div class="bom-head__icon">🛠️</div>
+                    <h3 class="bom-head__title">Lista eléctrica</h3>
+                </div>
+
+
+                <div class="bom-head__actions_werper">
+                    <input type="search" placeholder="search">
+                    <div>
+                        <button>Color</button>
+                        <button>Filament</button>
+                        <button>Last Updated</button>
+                        <button>Cost</button>
+                    </div>
+                    <button class="addpartstbtn">
+                        Add Parts
+                    </button>
+                </div>
+
             </div>
 
             <div class="bom-table-wrap">
@@ -844,8 +914,26 @@
         <div class="container">
             <!-- Subassemblies -->
             <header class="bom-head bom-head--subassy">
-                <div class="bom-head__icon">🧩</div>
-                <h3 class="bom-head__title">Lista de Subensamblajes</h3>
+
+                <div class="headandiconWrper">
+                    <div class="bom-head__icon">🧩</div>
+                    <h3 class="bom-head__title">Lista de Subensamblajes</h3>
+                </div>
+
+
+
+                <div class="bom-head__actions_werper">
+                    <input type="search" placeholder="search">
+                    <div>
+                        <button>Color</button>
+                        <button>Filament</button>
+                        <button>Last Updated</button>
+                        <button>Cost</button>
+                    </div>
+                    <button class="addpartstbtn">
+                        Add Parts
+                    </button>
+                </div>
             </header>
 
             <div class="subassy-grid">
@@ -1025,7 +1113,7 @@
             <div class="footer-bottom">
                 <div class="footer-policies">
                     <a href="#">Privacy Policy |</a>
-                    <a href="#">Terms of Use |</a>
+                    <a href="./termsandcondition.html">Terms of Use |</a>
                     <a href="#">Cookie Policy</a>
                 </div>
                 <div class="copyright">

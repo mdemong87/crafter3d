@@ -25,7 +25,7 @@
 body {
     background: var(--bg);
     color: var(--text);
-    font-family: ui-sans-serif, system-ui, Segoe UI, Roboto, Arial
+    font-family: "Nunito", sans-serif !important;
 }
 
 .bom-section {
@@ -37,6 +37,7 @@ body {
 .bom-head {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
     margin: 28px 0 10px;
     padding: 10px 14px;
@@ -44,6 +45,50 @@ body {
     border: 1px solid var(--line);
     box-shadow: var(--shadow);
 }
+
+.headandiconWrper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bom-head__actions_werper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.bom-head__actions_werper button {
+
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.bom-head__actions_werper button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    transition: .3s ease-in-out;
+}
+
+.bom-head__actions_werper input {
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.addpartstbtn {
+    background: var(--branColor);
+    color: #fff;
+    border: none !important;
+}
+
 
 .bom-head__icon {
     font-size: 22px;
@@ -118,8 +163,9 @@ body {
     color: #334155;
     font-weight: 700;
     font-size: 13px;
-    text-align: left;
     padding: 12px 14px;
+    text-wrap: nowrap;
+    text-align: center;
 }
 
 .bom-table thead .sticky {
@@ -133,6 +179,8 @@ body {
     border-bottom: 1px solid var(--line);
     vertical-align: middle;
     background: #fff;
+    text-wrap: nowrap;
+    text-align: center;
 }
 
 .bom-table tbody tr:nth-child(odd) td {
@@ -172,7 +220,8 @@ body {
 
 .actionBtnWrper {
     display: flex;
-    align-items: center;
+    align-items: center !important;
+    justify-content: center;
     gap: 5px;
     padding: 14px;
     width: 100%;
@@ -189,6 +238,14 @@ body {
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.addedIconWrper:hover {
+    transform: translateY(-1px);
+    background: red;
+    color: #fff;
+    border: 1px solid rgb(255, 55, 55);
 }
 
 
@@ -201,6 +258,14 @@ body {
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.removeIconWrper:hover {
+    transform: translateY(-1px);
+    background: green;
+    color: #fff;
+    border: 1px solid rgb(115, 255, 61);
 }
 
 
@@ -224,8 +289,28 @@ body {
     margin: auto;
 }
 
+.smallheadertable {
+    display: none;
+}
+
+
+@media (max-width:1024px) {
+    .bom-head__actions_werper {
+        display: none;
+    }
+}
+
+
 /* Responsive: stack as cards on small screens */
 @media (max-width:720px) {
+
+
+
+    .smallheadertable {
+        display: block;
+        font-weight: 700;
+    }
+
     .bom-table {
         min-width: 0;
     }
@@ -249,14 +334,22 @@ body {
     .bom-table tbody td {
         border: none;
         padding: 8px 0;
+        text-align: left;
+        display: flex;
+        gap: 10px;
+        align-items: center;
     }
 
     .bom-table tbody td::before {
         content: attr(data-label);
         display: block;
-        font-size: 12px;
-        color: var(--muted);
-        margin-bottom: 4px;
+        font-size: 16px;
+        color: var(--text);
+        font-weight: 700;
+    }
+
+    .actionBtnWrper {
+        justify-content: flex-start;
     }
 
     .sticky {
