@@ -504,7 +504,7 @@ img.product-img {
     width: 100vw !important;
     height: 100vh !important;
     background: rgba(0, 0, 0, 0.549);
-    z-index: 999;
+    z-index: 9999999999999999 !important;
     display: none;
     align-items: center;
     justify-content: center;

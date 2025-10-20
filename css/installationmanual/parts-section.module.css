@@ -28,10 +28,6 @@ body {
     font-family: "Nunito", sans-serif !important;
 }
 
-.bom-section {
-    width: min(1200px, 94vw);
-    margin: 0 auto 48px;
-}
 
 /* Category headers */
 .bom-head {

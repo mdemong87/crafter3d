@@ -45,7 +45,6 @@ body {
     margin-top: 90px;
     background: var(--panel);
     border-radius: var(--radius-xl);
-    padding: 18px;
 }
 
 /* ---------- Wrapper ---------- */
@@ -59,9 +58,6 @@ body {
     border-top-right-radius: var(--radius-xl);
     padding: 18px;
     box-shadow: var(--shadow);
-
-
-
 }
 
 /* Media */
@@ -286,6 +282,22 @@ body {
 
     .stat--back {
         grid-column: 2 / 3;
+    }
+}
+
+
+@media (max-width:600px) {
+    .bom_Action_wrper {
+
+        gap: 5px;
+
+    }
+
+    .bom_Action_wrper>button {
+
+        padding: 7px 9px;
+        text-wrap: nowrap;
+
     }
 }
 
