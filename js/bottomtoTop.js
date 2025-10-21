@@ -3,10 +3,10 @@ const backToTopBtn = document.getElementById("backToTopBtn");
 
 // Show the button when user scrolls down 200px
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-        backToTopBtn.classList.add("show");
+    if (window.scrollY > 500) {
+        backToTopBtn.style.display = "flex";
     } else {
-        backToTopBtn.classList.remove("show");
+        backToTopBtn.style.display = "none";
     }
 });
 
