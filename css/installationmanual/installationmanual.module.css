@@ -168,20 +168,13 @@ body {
     gap: 14px 18px;
     align-items: start;
     position: relative;
+
 }
 
 /* vertical divider between halves (on lg) */
-@media (min-width:900px) {
+@media (max-width:900px) {
     .bom-summary__grid {
-        grid-template-columns: repeat(2, minmax(160px, 1fr));
-    }
-
-    .bom-summary__grid .divider {
-        grid-column: 1 / -1;
-        height: 1px;
-        background: var(--line);
-        margin: 4px 0 2px;
-        display: none;
+        grid-template-columns: 1fr;
     }
 
 }

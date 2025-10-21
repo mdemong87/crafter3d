@@ -315,12 +315,35 @@ body {
         display: none;
     }
 
+
     .bom-table tbody,
     .bom-table tr,
     .bom-table td {
         display: block;
         width: 100%;
     }
+
+    .bom-table tbody tr {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .bom-table tbody tr>*:nth-child(-n+3) {
+        grid-column: 1 / -1;
+        /* span all columns */
+        display: block;
+        /* behave like normal block elements */
+    }
+
+    .bom-table tbody tr:hover td {
+        background: transparent;
+    }
+
+    .bom-table tbody tr:nth-child(odd) td {
+        background: transparent;
+    }
+
 
     .bom-table tbody tr {
         border-top: 1px solid var(--line);
@@ -330,18 +353,19 @@ body {
     .bom-table tbody td {
         border: none;
         padding: 8px 0;
-        text-align: left;
-        display: flex;
-        gap: 10px;
-        align-items: center;
+        text-align: left !important;
+        text-wrap: wrap;
+        color: #0f172a;
+        font-weight: 700;
+        font-size: 13px;
     }
 
     .bom-table tbody td::before {
         content: attr(data-label);
         display: block;
-        font-size: 16px;
-        color: var(--text);
-        font-weight: 700;
+        color: #475569;
+        font-size: 12px;
+        font-weight: 500;
     }
 
     .actionBtnWrper {
